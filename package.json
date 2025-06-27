@@ -8,7 +8,9 @@
     "format": "prettier --write \"src/**/*.ts\" \"*.{js,ts,json,md}\" ",
     "lint:fix": "eslint . --ext .ts --fix",
     "lint": "eslint . --ext .ts",
-    "typecheck": "bun run --bun tsc --pretty --tsBuildInfoFile node_modules/.cache/tsconfig.tsBuildInfo"
+    "typecheck": "bun run --bun tsc --pretty --tsBuildInfoFile node_modules/.cache/tsconfig.tsBuildInfo",
+    "commitlint": "commitlint --edit",
+    "prepare": "husky"
   },
   "private": true,
   "devDependencies": {
@@ -19,9 +21,12 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "apollo-server-express": "^3.13.0",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
-    "graphql": "^16.11.0"
+    "graphql": "^16.11.0",
+    "husky": "^9.1.7"
   }
 }

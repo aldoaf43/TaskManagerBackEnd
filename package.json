@@ -1,0 +1,27 @@
+{
+  "name": "taskmanager",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "format": "prettier --write \"src/**/*.ts\" \"*.{js,ts,json,md}\" ",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "lint": "eslint . --ext .ts",
+    "typecheck": "bun run --bun tsc --pretty --tsBuildInfoFile node_modules/.cache/tsconfig.tsBuildInfo"
+  },
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "graphql": "^16.11.0"
+  }
+}

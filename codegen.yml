@@ -1,0 +1,17 @@
+overwrite: true
+schema: '**/typeDef.graphql.ts'
+documents: null
+emitLegacyCommonJSImports: false
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
+      - add:
+          content: |
+            /* eslint-disable */
+            // @ts-nocheck
+
+  src/generated/graphql.schema.json:
+    plugins:
+      - 'introspection'

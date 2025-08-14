@@ -18,6 +18,11 @@
     "@commitlint/config-conventional": "^19.8.1",
     "@eslint/js": "^9.33.0",
     "@eslint/json": "^0.13.1",
+    "@graphql-codegen/add": "^5.0.3",
+    "@graphql-codegen/cli": "^5.0.7",
+    "@graphql-codegen/introspection": "^4.0.3",
+    "@graphql-codegen/typescript": "^4.1.6",
+    "@graphql-codegen/typescript-resolvers": "^4.5.1",
     "@types/bun": "latest",
     "@types/express": "^5.0.3",
     "eslint": "^9.33.0",
@@ -34,12 +39,12 @@
   "dependencies": {
     "@apollo/server": "^5.0.0",
     "@as-integrations/express5": "^1.1.2",
-    "@graphql-codegen/cli": "^5.0.7",
-    "apollo-server-express": "^3.13.0",
+    "@types/lodash.merge": "^4.6.9",
     "cors": "^2.8.5",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
     "graphql": "^16.11.0",
+    "graphql-rate-limit-directive": "^2.0.6",
     "mongoose": "^8.17.1"
   }
 }

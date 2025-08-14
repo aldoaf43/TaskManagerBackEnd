@@ -1,5 +1,8 @@
-interface AppContext {
-  // db: TaskManager;
-  res: any;
-  token: string;
-}
+import type { Response } from 'express';
+
+import type { TaskManager } from '@/models';
+
+export type ApolloContext = {
+  db: TaskManager;
+  res: Response;
+};

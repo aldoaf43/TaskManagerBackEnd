@@ -14,23 +14,32 @@
   },
   "private": true,
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@eslint/js": "^9.33.0",
+    "@eslint/json": "^0.13.1",
     "@types/bun": "latest",
-    "@types/express": "^5.0.3"
+    "@types/express": "^5.0.3",
+    "eslint": "^9.33.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.5.1",
+    "prettier": "^3.6.2",
+    "typescript-eslint": "^8.39.1"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
   "dependencies": {
+    "@apollo/server": "^5.0.0",
     "@as-integrations/express5": "^1.1.2",
-    "@commitlint/cli": "^19.8.1",
-    "@commitlint/config-conventional": "^19.8.1",
+    "@graphql-codegen/cli": "^5.0.7",
     "apollo-server-express": "^3.13.0",
     "cors": "^2.8.5",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
     "graphql": "^16.11.0",
-    "husky": "^9.1.7",
-    "mongoose": "^8.17.1",
-    "prettier": "^3.6.2"
+    "mongoose": "^8.17.1"
   }
 }

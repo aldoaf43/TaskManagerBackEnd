@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun run index.ts",
+    "start": "bun run --watch --hot index.ts",
     "codegen": "graphql-codegen --config codegen.yml",
     "format": "prettier --write \"src/**/*.ts\" \"*.{js,ts,json,md}\" ",
     "lint:fix": "eslint . --ext .ts --fix",

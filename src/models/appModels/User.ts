@@ -14,9 +14,9 @@ const MODEL_NAME = 'User';
 
 export type UserDocument = Document<Types.ObjectId> & User;
 
-export type UserModel = ReturnType<typeof createUsers>;
+export type UserModel = ReturnType<typeof createUsersModel>;
 
-export function createUsers(mongoose: Mongoose) {
+export function createUsersModel(mongoose: Mongoose) {
   const schema = new mongoose.Schema<User>(
     {
       name: { type: String, required: true },
